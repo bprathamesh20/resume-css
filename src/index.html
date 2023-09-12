@@ -4,20 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Prathamesh Bhandekar's Resume</title>
 </head>
 
 <body>
     <header>
-        <h1>Prathamesh Bhandekar</h1>
+        <h1 class="name">Prathamesh Bhandekar</h1>
         <address>
-            Sathe Nagar, Lohegaon, Pune |
-            📞Phone: <a href="tel:+919284922470">+91 9284922470</a> |
-            📩Email: <a href="mailto:prathamesh.bhandekar@mmit.edu.in">prathamesh.bhandekar@mmit.edu.in</a>
+            <p>Sathe Nagar, Lohegaon, Pune </p>
+            <div>
+             <a class="social" href="tel:+919284922470">📞Phone</a> 
+             <a class="social" href="mailto:bprathamesh2003@gmail.com">📩Email</a>
+             <a class="social" href="https://github.com/bprathamesh20">🔗GitHub</a>
+             <a class="social" href="https://twitter.com/impra20">🔗Twitter</a>
+            </div>
         </address>
     </header>
-    <hr>
 
+<main>
     <section id="education">
         <h2>Education</h2>
         <ul>
@@ -29,57 +34,57 @@
                     <p>Expected May 2025</p>
                     <h4>Relevant Courses</h4>
                     <ul>
-                        <li>Data Structures</li>
-                        <li>Algorithms</li>
-                        <li>Software Engineering</li>
+                        <li class="label flex-row">Data Structures</li>
+                        <li class="label flex-row">Algorithms</li>
+                        <li class="label flex-row">Software Engineering</li>
                     </ul>
                 </article>
             </li>
         </ul>
     </section>
-    <hr>
+
     <section id="technical-skills">
         <h2>Technical Skills</h2>
         <ul>
             <li>
-                <article>
+                <article class="flex-row">
                     <h3>Programming Languages</h3>
-                    <p>JavaScript, HTML, CSS, Java, C++, Python</p>
+                    <p class="label">JavaScript, HTML, CSS, Java, C++, Python</p>
                 </article>
             </li>
             <li>
-                <article>
+                <article class="flex-row">
                     <h3>Front-End Frameworks</h3>
-                    <p>React.js</p>
+                    <p class="label">React.js</p>
                 </article>
             </li>
             <li>
-                <article>
+                <article class="flex-row">
                     <h3>Back-End Technologies</h3>
-                    <p>Firebase, Node.js (basic)</p>
+                    <p class="label">Firebase, Node.js (basic)</p>
                 </article>
             </li>
             <li>
-                <article>
+                <article class="flex-row">
                     <h3>Database Management</h3>
-                    <p>Firebase, MySQL, MongoDB</p>
+                    <p class="label">Firebase, MySQL, MongoDB</p>
                 </article>
             </li>
             <li>
-                <article>
+                <article class="flex-row">
                     <h3>Version Control</h3>
-                    <p>Git, GitHub</p>
+                    <p class="label">Git, GitHub</p>
                 </article>
             </li>
             <li>
-                <article>
+                <article class="flex-row">
                     <h3>Tools</h3>
-                    <p>Visual Studio Code, Figma, Wordpress</p>
+                    <p class="label">Visual Studio Code, Figma, Wordpress</p>
                 </article>
             </li>
         </ul>
     </section>
-    <hr>
+
     <section id="projects">
         <h2>Projects</h2>
         <ul>
@@ -113,7 +118,7 @@
             </li>
         </ul>
     </section>
-    <hr>
+
     <section id="certificates">
         <h2>Certificates</h2>
         <ul>
@@ -146,10 +151,10 @@
             </li>
         </ul>
     </section>
-    <hr>
+
     <section id="leadership-experience">
-        <h2>Leadership Experience</h2>
-        <ul>
+        <h2>Leadership<br> Experience</h2>
+        <ul>    
             <li>
                 <article>
                     <h3>Team Leader, Kavach Internal Hackathon</h3>
@@ -166,7 +171,7 @@
             </li>
         </ul>
     </section>
-    <hr>
+
     <section id="co-curriculars">
         <h2>Co-Curriculars</h2>
         <ul>
@@ -183,7 +188,7 @@
             </li>
         </ul>
     </section>
-<hr>
+</main>
 
     <footer >
         <p>Prathamesh Bhandekar &copy2023</p>

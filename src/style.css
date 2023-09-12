@@ -53,6 +53,8 @@ table {
 :root{
     --dark-primary: #E2E8F0;
     --dark-background: #0F172A;
+    --dark-label-primary: #CBD5E1;
+    --dark-text-secondary: #CBD5E1;
 }
 body{
     color: var(--dark-primary);
@@ -64,7 +66,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-sizing: content-box;
+    box-sizing: border-box;
     height: 35vh;
     background:linear-gradient(180deg, rgba(15, 23, 42, 0.00) 0%, #0F172A 100%), url("header-1.png");
     background-repeat: no-repeat;
@@ -113,6 +115,7 @@ font-size: 1.5rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+width: 300px;
 }
 
 main{
@@ -123,7 +126,9 @@ section{
     border-bottom: 1px solid #334155;;
     display: flex;
     flex-direction: row;
-
+    align-items: flex-start;
+ 
+    
     
 }
 
@@ -131,5 +136,110 @@ section{
 p{
     font-size: 1rem;
     line-height: 1.5;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    margin: 1rem 0rem;
+    color: var(--dark-text-secondary);
 }
 
+article{
+    width: 700px;
+}
+
+
+h3{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    
+}
+
+.label{
+    color: var(--dark-label-primary, #CBD5E1);
+font-size: 1rem;
+font-weight: 500;
+border-radius: 3px;
+background: #334155;
+padding: 0.2rem 0.8rem;
+width: fit-content;
+}
+
+.flex-row > p{
+    margin: 0rem 0rem 0rem 1rem;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+article > ul{
+    
+    list-style-type: disc;
+}
+
+
+@media screen and (max-width: 1024px) {
+    /* Your tablet-specific styles go here */
+    main{
+        padding: 2rem 2rem;
+    }
+   
+    section{
+        flex-direction: column;
+
+    }
+
+    article{
+        width: 100%;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    
+    }
+    .label{
+        margin-top: 1rem ;
+    }
+  }
+  
+  /* CSS for mobile phones */
+  @media screen and (max-width: 767px) {
+    main{
+        padding: 2rem 2rem;
+    }
+   
+    section{
+        flex-direction: column;
+
+    }
+
+    article{
+        width: 100%;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    
+    }
+    .label{
+        margin-top: 1rem 1rem ;
+    }
+     
+    .flex-row > p{
+        margin: 1rem 0rem 0rem 0rem;
+    
+    }
+    h2{
+        margin-bottom: 1.5rem;
+        color: var(--dark-text-secondary);
+    }
+    
+  }
