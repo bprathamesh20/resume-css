@@ -218,6 +218,7 @@ article > ul{
    
     section{
         flex-direction: column;
+        padding: 1rem 0rem;
 
     }
 
@@ -240,6 +241,26 @@ article > ul{
     h2{
         margin-bottom: 1.5rem;
         color: var(--dark-text-secondary);
+        font-size: 1.5rem;
+    }
+
+    .name{
+        font-size: 1.5rem;
+    }
+
+    address{
+        height: 20vh;
+    }
+
+    .social-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h3{
+        font-size: 1.2rem;
     }
     
   }
